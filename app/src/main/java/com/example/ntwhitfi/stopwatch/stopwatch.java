@@ -44,6 +44,10 @@ public class stopwatch extends AppCompatActivity {
         seconds = 0;
     }
 
+    public void onKittyClick(View view) {
+        final TextView timeView = (TextView)findViewById(R.id.time_view);
+        timeView.setText("Kitty Meow Meow");
+    }
     private void runTimer () {
         final TextView timeView = (TextView)findViewById(R.id.time_view);
         final Handler handler = new Handler();
